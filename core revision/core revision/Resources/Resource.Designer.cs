@@ -60,11 +60,17 @@ namespace core_revision
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050005
+			public const int basicmathlink = 2131034117;
+			
 			// aapt resource value: 0x7f050001
 			public const int button2 = 2131034113;
 			
 			// aapt resource value: 0x7f050002
 			public const int button3 = 2131034114;
+			
+			// aapt resource value: 0x7f050006
+			public const int button4 = 2131034118;
 			
 			// aapt resource value: 0x7f050000
 			public const int mathlink = 2131034112;

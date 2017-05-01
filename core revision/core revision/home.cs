@@ -20,6 +20,11 @@ namespace core_revision
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.homelayout);
             // Create your application here
+            Button mathlink = FindViewById<Button>(Resource.Id.mathlink);
+            mathlink.Click += delegate {
+
+                StartActivity(typeof(mathmenu));
+            };
         }
     }
 }
