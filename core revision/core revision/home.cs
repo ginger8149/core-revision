@@ -15,13 +15,14 @@ namespace core_revision
     [Activity(Label = "home")]
     public class home : Activity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
+            base.OnCreate(bundle);
             SetContentView(Resource.Layout.homelayout);
             // Create your application here
             Button mathlink = FindViewById<Button>(Resource.Id.mathlink);
-            mathlink.Click += delegate {
+            mathlink.Click += (object sender, EventArgs e) =>
+            {
 
                 StartActivity(typeof(mathmenu));
             };

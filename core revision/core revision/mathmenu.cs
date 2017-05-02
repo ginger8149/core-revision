@@ -20,9 +20,10 @@ namespace core_revision
             base.OnCreate(savedInstanceState);
 
             Button basicmathlink = FindViewById<Button>(Resource.Id.basicmathlink);
-            basicmathlink.Click += delegate {
+            basicmathlink.Click += (object sender, EventArgs e) =>
+            {
 
-                StartActivity(typeof(mathmenu));
+                StartActivity(typeof(home));
             };
         }
     }
